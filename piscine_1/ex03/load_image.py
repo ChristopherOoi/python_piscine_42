@@ -12,6 +12,7 @@ def ft_load(path: str) -> array:
         img = Image.open(path)
         print("The image format is ", img.format)
         print("The shape of the image is ", shape(img))
+        print(array(img))
         return array(img)
     except Exception as e:
         print("Error: ", e)
